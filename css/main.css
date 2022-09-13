@@ -14,6 +14,14 @@ html {
 body {
     max-width: 800px;
     margin: 2rem auto;
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    color: #2B2D42;
+    background-color: #EDF2F4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 h1{
     text-align: center;
@@ -67,7 +75,7 @@ form ul{
 
 form li{
     list-style: none;
-
+    margin-bottom: 1.5em;
 }
 
 label{
@@ -89,7 +97,11 @@ select{
 fieldset{
     border: 2px solid #2B2D42;
     padding: 1em;
-    margin: 1em 0 2em;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0  .5em;
 }
 
 .input-group{
@@ -105,4 +117,23 @@ label input + span{
 
 label input:checked + span{
     font-weight: bold;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    border: 2px solid #2B2D42;
+    padding: 1em;
+    width: 100%;
+    color: inherit;
+    font-size: inherit;
+    background-color: white;
+}
+
+button[type="submit"] {
+    margin-right: 1em;
+}
+
+button[type="submit"] + a {
+    color: #2B2D42;
 }
